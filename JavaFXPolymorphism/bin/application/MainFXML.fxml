@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <TableView fx:id="tblAnimal" layoutY="110.0" prefHeight="490.0" prefWidth="700.0">
+        <columns>
+          <TableColumn fx:id="colName" prefWidth="133.59999239444733" sortable="false" text="Name" />
+          <TableColumn fx:id="colType" prefWidth="52.00000762939453" sortable="false" text="Type" />
+            <TableColumn fx:id="colDescription" prefWidth="449.6000061035156" resizable="false" sortable="false" text="Description" />
+            <TableColumn fx:id="colSound" prefWidth="66.40008544921875" sortable="false" text="Sound" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="cbAnimal" layoutX="314.0" layoutY="67.0" prefWidth="200.0" />
+      <Button fx:id="btnAdd" layoutX="539.0" layoutY="67.0" mnemonicParsing="false" onAction="#onClick" text="Add" />
+      <TextField fx:id="txtName" layoutX="86.0" layoutY="67.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label layoutX="86.0" layoutY="50.0" text="Name" />
+      <Label layoutX="314.0" layoutY="50.0" text="Animal" />
+      <Label layoutX="88.0" layoutY="92.0" text="*name will be assigned if left blank" textFill="RED">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
